@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="imgHeaderDiv">
+        <img src="logoMerida.svg" alt="Logo de Mérida" />
+      </div>
+      <div class="boxTitleHeader">
+        <h1 class="roboto-medium">CMMERTyS</h1>
+        <h3 class="roboto-regular">
+          Catálogo Municipal de Mérida de Regulaciones, Trámites y Servicios
+        </h3>
+      </div>
+    </header>
+    <main class="mainBox">
+      <section class="startMail">
+        <p>
+          Usted ha recibido una notificación de
+          <u class="underlineMail">{tipoNotificacion}</u> en el
+          <u class="underlineMail">{registro}</u>
+        </p>
+      </section>
+      <section class="dataMail">
+        <p class="col-12">Fecha: {fecha}</p>
+        <p class="flexGrow-2">Realizado por: {userName}</p>
+        <p class="flexGrow-2">Rol: {rol}</p>
+        <p class="col-12">Acción: {accion}</p>
+        <p class="col-12"><b>Datos de la ficha:</b></p>
+        <p class="col-12">Nombre: {nombreFicha}</p>
+        <p class="col-12">Homoclave: {homoClave}</p>
+        <p class="col-12">Dependencia: {dependencia}</p>
+      </section>
+      <section class="closingMail">
+        <p>Podrá dar seguimiento a esta notificación ingresando a:</p>
+        <a
+          class="hyperLinkMerida"
+          href="https://www.merida.gob.mx/cmmertys"
+          target="_blank"
+          >www.merida.gob.mx/cmmertys</a
+        >
+      </section>
+    </main>
+    <footer>
+      <h4 class="roboto-bold">Autoridad de Mejora Regulatoria Municipal</h4>
+      <a
+        class="footerLink"
+        href="http://www.merida.gob.mx/mejoraregulatoria"
+        target="_blank"
+        rel="noopener noreferrer"
+        >www.merida.gob.mx/mejoraregulatoria</a
+      >
+    </footer>
+  </body>
+</html>
